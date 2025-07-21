@@ -5,6 +5,7 @@ A standalone GraphQL service to handle user operations.
 ## Installation
 
 ```node
+cd user-service
 npm install
 ```
 
