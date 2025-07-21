@@ -9,6 +9,23 @@ cd user-service
 npm install
 ```
 
+```
+-- set the password for the built-in "postgres" user
+ALTER USER postgres
+  WITH ENCRYPTED PASSWORD '191102';
+
+\c postgres
+
+-- create the "personnel" database
+CREATE DATABASE personnel
+  WITH 
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    LC_COLLATE = 'en_US.utf8'
+    LC_CTYPE = 'en_US.utf8'
+    TEMPLATE = template0;
+```
+
 ## Usage
 
 ```node
