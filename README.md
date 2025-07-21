@@ -28,18 +28,18 @@ CREATE DATABASE personnel
 -- seed sample users
 -- password is "JohnDoe01@" (for all sample users)
 INSERT INTO "Users"
-  ("userId",                           "username",         "email",                           "password",                                                               "role",     "createdAt",           "updatedAt")
+  ("userId",                               "username",        "email",                          "password",                                                     "role",      "createdAt",   "updatedAt")
 VALUES
-  ('a3f47e1b-4d2c-4e5f-9a11-1a2b3c4d5e6f', 'manager_olivia',  'olivia.manager@example.com',     '$2b$10$f.2V43IZDKoq3YtB2fu4IOhK762U0BVydmntsnvOMlrJeygLpzZuW', 'MANAGER', NOW(), NOW()),
-  ('b2c3d4e5-6f7a-8b9c-0d1e-2f3a4b5c6d7e', 'manager_lucas',   'lucas.manager@example.com',      '$2b$10$f.2V43IZDKoq3YtB2fu4IOhK762U0BVydmntsnvOMlrJeygLpzZuW', 'MANAGER', NOW(), NOW()),
-  ('c3d4e5f6-7a8b-9c0d-1e2f-3a4b5c6d7e8f', 'manager_emily',   'emily.manager@example.com',      '$2b$10$f.2V43IZDKoq3YtB2fu4IOhK762U0BVydmntsnvOMlrJeygLpzZuW', 'MANAGER', NOW(), NOW()),
-  ('d4e5f6a7-8b9c-0d1e-2f3a-4b5c6d7e8f9a', 'manager_james',   'james.manager@example.com',      '$2b$10$f.2V43IZDKoq3YtB2fu4IOhK762U0BVydmntsnvOMlrJeygLpzZuW', 'MANAGER', NOW(), NOW()),
-  ('e5f6a7b8-9c0d-1e2f-3a4b-5c6d7e8f9a0b', 'member_emma',     'emma.member@example.com',        '$2b$10$f.2V43IZDKoq3YtB2fu4IOhK762U0BVydmntsnvOMlrJeygLpzZuW', 'MEMBER',  NOW(), NOW()),
-  ('f6a7b8c9-0d1e-2f3a-4b5c-6d7e8f9a0b1c', 'member_noah',     'noah.member@example.com',        '$2b$10$f.2V43IZDKoq3YtB2fu4IOhK762U0BVydmntsnvOMlrJeygLpzZuW', 'MEMBER',  NOW(), NOW()),
-  ('a7b8c9d0-1e2f-3a4b-5c6d-7e8f9a0b1c2d', 'member_ava',      'ava.member@example.com',         '$2b$10$f.2V43IZDKoq3YtB2fu4IOhK762U0BVydmntsnvOMlrJeygLpzZuW', 'MEMBER',  NOW(), NOW()),
-  ('b8c9d0e1-2f3a-4b5c-6d7e-8f9a0b1c2d3e', 'member_liam',     'liam.member@example.com',        '$2b$10$f.2V43IZDKoq3YtB2fu4IOhK762U0BVydmntsnvOMlrJeygLpzZuW', 'MEMBER',  NOW(), NOW()),
-  ('c9d0e1f2-3a4b-5c6d-7e8f-9a0b1c2d3e4f', 'member_sophia',   'sophia.member@example.com',      '$2b$10$f.2V43IZDKoq3YtB2fu4IOhK762U0BVydmntsnvOMlrJeygLpzZuW', 'MEMBER',  NOW(), NOW()),
-  ('d0e1f2a3-4b5c-6d7e-8f9a-0b1c2d3e4f5a', 'member_mason',    'mason.member@example.com',       '$2b$10$f.2V43IZDKoq3YtB2fu4IOhK762U0BVydmntsnvOMlrJeygLpzZuW', 'MEMBER',  NOW(), NOW());
+  ('a3f47e1b-4d2c-4e5f-9a11-1a2b3c4d5e6f', 'manager_olivia',  'olivia.manager@example.com',     '$2b$10$f.2V43IZDKoq3YtB2fu4IOhK762U0BVydmntsnvOMlrJeygLpzZuW', 'MANAGER',   NOW(),         NOW()),
+  ('b2c3d4e5-6f7a-8b9c-0d1e-2f3a4b5c6d7e', 'manager_lucas',   'lucas.manager@example.com',      '$2b$10$f.2V43IZDKoq3YtB2fu4IOhK762U0BVydmntsnvOMlrJeygLpzZuW', 'MANAGER',   NOW(),         NOW()),
+  ('c3d4e5f6-7a8b-9c0d-1e2f-3a4b5c6d7e8f', 'manager_emily',   'emily.manager@example.com',      '$2b$10$f.2V43IZDKoq3YtB2fu4IOhK762U0BVydmntsnvOMlrJeygLpzZuW', 'MANAGER',   NOW(),         NOW()),
+  ('d4e5f6a7-8b9c-0d1e-2f3a-4b5c6d7e8f9a', 'manager_james',   'james.manager@example.com',      '$2b$10$f.2V43IZDKoq3YtB2fu4IOhK762U0BVydmntsnvOMlrJeygLpzZuW', 'MANAGER',   NOW(),         NOW()),
+  ('e5f6a7b8-9c0d-1e2f-3a4b-5c6d7e8f9a0b', 'member_emma',     'emma.member@example.com',        '$2b$10$f.2V43IZDKoq3YtB2fu4IOhK762U0BVydmntsnvOMlrJeygLpzZuW', 'MEMBER',    NOW(),         NOW()),
+  ('f6a7b8c9-0d1e-2f3a-4b5c-6d7e8f9a0b1c', 'member_noah',     'noah.member@example.com',        '$2b$10$f.2V43IZDKoq3YtB2fu4IOhK762U0BVydmntsnvOMlrJeygLpzZuW', 'MEMBER',    NOW(),         NOW()),
+  ('a7b8c9d0-1e2f-3a4b-5c6d-7e8f9a0b1c2d', 'member_ava',      'ava.member@example.com',         '$2b$10$f.2V43IZDKoq3YtB2fu4IOhK762U0BVydmntsnvOMlrJeygLpzZuW', 'MEMBER',    NOW(),         NOW()),
+  ('b8c9d0e1-2f3a-4b5c-6d7e-8f9a0b1c2d3e', 'member_liam',     'liam.member@example.com',        '$2b$10$f.2V43IZDKoq3YtB2fu4IOhK762U0BVydmntsnvOMlrJeygLpzZuW', 'MEMBER',    NOW(),         NOW()),
+  ('c9d0e1f2-3a4b-5c6d-7e8f-9a0b1c2d3e4f', 'member_sophia',   'sophia.member@example.com',      '$2b$10$f.2V43IZDKoq3YtB2fu4IOhK762U0BVydmntsnvOMlrJeygLpzZuW', 'MEMBER',    NOW(),         NOW()),
+  ('d0e1f2a3-4b5c-6d7e-8f9a-0b1c2d3e4f5a', 'member_mason',    'mason.member@example.com',       '$2b$10$f.2V43IZDKoq3YtB2fu4IOhK762U0BVydmntsnvOMlrJeygLpzZuW', 'MEMBER',    NOW(),         NOW());
 
 ```
 
