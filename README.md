@@ -88,7 +88,10 @@ mutation CreateUser {
    }
   }
 }
+```
+<img width="1278" height="430" alt="image" src="https://github.com/user-attachments/assets/29a5e620-2c99-4d9a-9724-1965c1e84394" />
 
+```
 mutation Login {
   login(input: {email: "johndoe@hello.com", password: "JohnDoe01@"}) {
     code
@@ -100,4 +103,30 @@ mutation Login {
   }
 }
 ```
+<img width="1279" height="477" alt="image" src="https://github.com/user-attachments/assets/1bbc187b-32dd-4422-b905-f360e2aa5fdd" />
 
+```
+query User {
+  user(userId: "1be478f1-f842-40fa-8f0b-ad7ecfe5db3b") {
+   email
+   role
+   userId
+   username
+   createdAt 
+  }
+}
+```
+<img width="1280" height="377" alt="image" src="https://github.com/user-attachments/assets/9998ffb0-b987-421d-8072-6399c8360302" />
+
+```
+query Users {
+  users(role: MEMBER) {
+    userId
+    username
+    email
+    role
+    createdAt
+  }
+}
+```
+<img width="1273" height="734" alt="image" src="https://github.com/user-attachments/assets/c8ffa731-ce0e-4455-93fb-fc6fc1ca3826" />
