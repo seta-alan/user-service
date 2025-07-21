@@ -26,7 +26,7 @@ npm start
 ```
 mutation CreateUser {
   createUser(input: {username: "john", email: "johndoe@hello.com", password: "JohnDoe01@", role: MEMBER}) {
-     code
+   code
    success
    message
    errors
