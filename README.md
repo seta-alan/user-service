@@ -10,6 +10,7 @@ npm install
 ```
 
 ```
+-- install postgresql + dbeaver
 -- set the password for the built-in "postgres" user
 ALTER USER postgres
   WITH ENCRYPTED PASSWORD '191102';
@@ -40,8 +41,9 @@ VALUES
   ('b8c9d0e1-2f3a-4b5c-6d7e-8f9a0b1c2d3e', 'member_liam',     'liam.member@example.com',        '$2b$10$f.2V43IZDKoq3YtB2fu4IOhK762U0BVydmntsnvOMlrJeygLpzZuW', 'MEMBER',    NOW(),         NOW()),
   ('c9d0e1f2-3a4b-5c6d-7e8f-9a0b1c2d3e4f', 'member_sophia',   'sophia.member@example.com',      '$2b$10$f.2V43IZDKoq3YtB2fu4IOhK762U0BVydmntsnvOMlrJeygLpzZuW', 'MEMBER',    NOW(),         NOW()),
   ('d0e1f2a3-4b5c-6d7e-8f9a-0b1c2d3e4f5a', 'member_mason',    'mason.member@example.com',       '$2b$10$f.2V43IZDKoq3YtB2fu4IOhK762U0BVydmntsnvOMlrJeygLpzZuW', 'MEMBER',    NOW(),         NOW());
-
 ```
+-- connect to db on dbeaver
+<img width="829" height="604" alt="image" src="https://github.com/user-attachments/assets/dec19d66-c7fc-4bdc-8178-1a58c93446f3" />
 
 ## Usage
 
