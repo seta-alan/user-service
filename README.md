@@ -24,6 +24,41 @@ CREATE DATABASE personnel
     LC_COLLATE = 'en_US.utf8'
     LC_CTYPE = 'en_US.utf8'
     TEMPLATE = template0;
+
+-- enable UUID generation
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+
+-- seed sample users
+INSERT INTO "Users" 
+  ("userId", "username", "email", "password", "role", "createdAt", "updatedAt")
+VALUES
+  (
+    uuid_generate_v4(),
+    'manager_anna',
+    'anna.manager@example.com',
+    '$2b$10$7uPmZ1y9Kq3A6a1byIN.X.crUh5o1T2pC1N1TfzOX54dJzwwMJDfS',
+    'MANAGER',
+    NOW(),
+    NOW()
+  ),
+  (
+    uuid_generate_v4(),
+    'member_bob',
+    'bob.member@example.com',
+    '$2b$10$9v4SzZa5B3lS7Q0bYnL/Hui5d6F1nX7ABY1zGxwU6k1PDfX3Qc5Ai',
+    'MEMBER',
+    NOW(),
+    NOW()
+  ),
+  (
+    uuid_generate_v4(),
+    'member_charlie',
+    'charlie.member@example.com',
+    '$2b$10$8yV7PoT4Qk6GnB2vYfLiK.jr3z5sH8dM4N0WxEfT9bP3Er6sJy8uG',
+    'MEMBER',
+    NOW(),
+    NOW()
+  );
 ```
 
 ## Usage
